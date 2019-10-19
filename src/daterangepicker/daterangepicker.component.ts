@@ -7,7 +7,7 @@ import { LocaleConfig, LOCALE_CONFIG } from './daterangepicker.config';
 
 import * as _moment from 'moment';
 import { LocaleService } from './locale.service';
-const moment = _moment;
+let moment = _moment;
 
 export enum SideEnum {
     left = 'left',
@@ -132,6 +132,7 @@ export class DaterangepickerComponent implements OnInit {
     options: any = {} ; // should get some opt from user
     @Input() drops: string;
     @Input() opens: string;
+    @Input() showRightCalendar: boolean = true;
     @Input() closeOnAutoApply = true;
     @Output() choosedDate: EventEmitter<Object>;
     @Output() rangeClicked: EventEmitter<Object>;

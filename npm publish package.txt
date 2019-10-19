@@ -1,0 +1,3 @@
+﻿ng-packagr -p package.json билдит
+перейти в папку dist c билдом
+npm publish --access=public
