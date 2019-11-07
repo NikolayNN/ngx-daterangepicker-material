@@ -139,7 +139,7 @@
       </div>
     </div>
 
-    <div [ngClass]="{'timepicker-delimeter': !showRightCalendar}">
+    <div *ngIf="!showRightCalendar" [ngClass]="{'timepicker-delimeter': !showRightCalendar}">
       <span>~</span>
     </div>
 
