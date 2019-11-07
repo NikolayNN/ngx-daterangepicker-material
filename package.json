@@ -1,6 +1,6 @@
 {
   "name": "@cooll3r/ngx-daterangepicker-material",
-  "version": "2.1.8-1",
+  "version": "2.1.8-2",
   "description": "Custom Angular 2+ date range picker (with material design theme)",
   "keywords": [
     "angular2",
